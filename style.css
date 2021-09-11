@@ -183,3 +183,73 @@ main {
 .subscription-form.error + .error-msg {
   visibility: visible;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    flex-direction: column;
+  }
+
+  .full-img-wrapper {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .container {
+    padding: 2em 0;
+  }
+
+  header .container {
+    justify-content: center;
+  }
+
+  .logo-wrapper {
+    width: 25vw;
+  }
+
+  .logo-wrapper img {
+    width: 100%;
+  }
+
+  .hero-mobile-img-wrapper {
+    display: block;
+  }
+
+  .hero-mobile-img-wrapper img {
+    width: 100%;
+  }
+
+  main {
+    height: auto;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .error-msg {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .container {
+    width: 100%;
+    padding: 2em;
+  }
+}
