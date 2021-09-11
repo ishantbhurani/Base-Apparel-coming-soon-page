@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Font */
+  --font-family: "Josefin Sans", sans-serif;
+  --font-size: 16px;
+
+  /* Colors */
+  /* Primary */
+  --color-desaturated-red: hsl(0, 36%, 70%);
+  --color-soft-red: hsl(0, 93%, 68%);
+
+  /* Neutral */
+  --color-dark-grayish-red: hsl(0, 6%, 24%);
+
+  /* Gradients */
+  --gradient-bg: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient-btn: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+html {
+  font-size: var(--font-size); /* modifying REM base value */
+}
+
+body {
+  font-family: var(--font-family);
+}
